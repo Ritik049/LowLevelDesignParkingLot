@@ -38,8 +38,8 @@ Keywords: Fixed no. of parking slot
 *Person --> do payement automated, or either give Parking ticket to parking agent and Parking agent ask money==> then mode selected, at the time of ticket giving to parking agent.
 
 4)Class Diagram-->
-vehicle class(ABSTRACT)--> String vehicleType, int vehicleNo.
-Concrete vehicle--> car,bike, and, cycle.
+vehicle class(ABSTRACT/Interface)--> String vehicleType, int vehicleNo.
+Concrete vehicle--> car,bike, and, cycle .
 
 Person class--> String vehicle, Payment mode, ParkingTicket ticket
 
@@ -48,5 +48,9 @@ Payment mode--> makePayement(String mode),
 ParkingTicket -->String VehicleType, int slotNo., LocalTime entryTime,
  LocalTime exitTime.
 
-ParkingAgent-->ParkingTicket ticket, PaymentMode accept, 
+ParkingAgent-->ParkingTicket ticket, PaymentMode accept, ParkingArea
+
+
+4)Activity Diagram:-->FLOW
+Entry(Person,ParkingAgent)---> ParkingAgent.issueTicket(){By checking availablity}-->Exit(Person,ParkingAgent)--->Exit(Check for automated if not)-->ParkingAgentAcceptPayment();
 
