@@ -9,6 +9,6 @@
           - Spot charged according to time 
           -Parking ticket issued to vehicle at entrance of parking lot
           - At exit, either pay at automated exit panel 
-          - Or to parking agent using card /cash.
+          - Or to parking agent using card /cash
 
 
