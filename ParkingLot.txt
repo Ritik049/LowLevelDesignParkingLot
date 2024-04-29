@@ -51,6 +51,6 @@ ParkingTicket -->String VehicleType, int slotNo., LocalTime entryTime,
 ParkingAgent-->ParkingTicket ticket, PaymentMode accept, ParkingArea
 
 
-4)Activity Diagram:-->FLOW
+4)Activity Diagram:-->FLOW Diagram
 Entry(Person,ParkingAgent)---> ParkingAgent.issueTicket(){By checking availablity}-->Exit(Person,ParkingAgent)--->Exit(Check for automated if not)-->ParkingAgentAcceptPayment();
 
